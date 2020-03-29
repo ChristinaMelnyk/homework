@@ -1,0 +1,5 @@
+number1 = input('Enter a four-digit number ')
+number2 = input('Enter a four-digit number ')
+summ = number1 + number2
+print(summ)
+print(summ[::-1])
