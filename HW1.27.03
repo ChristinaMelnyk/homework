@@ -1,0 +1,4 @@
+aphorism = 'Beautiful is better than ugly.\nExplicit is better than implicit.\nSimple is better than complex.\nComplex is better than complicated.\nReadability counts.'
+print(aphorism)
+print(aphorism.lower())
+print(aphorism.upper())
