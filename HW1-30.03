@@ -1,0 +1,15 @@
+from random import random
+a = round(random() * 100)
+i = 1
+print("Hello. \nI'm a program that made a random number. \nYou have to guess it. \nYou have 10 attempts")
+while i <= 10:
+    b = int(input(str(i) + ' -attempt: '))
+    if b > a:
+        print('Too cold')
+    elif b < a:
+        print('Too hot')
+    else:
+        print('You guessed it with %d attempts' %i)
+    i += 1
+else:
+    print("You have exhausted 10 attempts. It was made up", a)
