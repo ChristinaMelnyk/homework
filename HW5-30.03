@@ -1,0 +1,18 @@
+print("Hello, You should enter numbers till you will not guess P or H value")
+print("When you guess one of the given numbers. \nI'll show you sum of entered numbers if A < P. \nAnd product of numbers if A > H")
+S = 0
+D = 1
+K = 0
+P = 30
+H = 80
+A = int(input('Enter the number:'))
+while A != P and A != H:
+    if A < P:
+        S = A + S
+    elif A > H:
+        D = A * D
+    else:
+        K += 1
+    A = int(input('Enter the number:'))
+print('Summ of entered data: %d' %S, 'Product of numbers: %d' %D, 'Count of entered values in range: %d' %K)
+    
