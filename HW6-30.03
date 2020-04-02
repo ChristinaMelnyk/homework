@@ -1,0 +1,16 @@
+print("I'm a program. I'll count entered positive and negative numbers in percentage.")
+print("Input 0 to stop")
+positive = 0
+negative = 0
+number = int(input('Enter: '))
+while number !=0:
+    if number > 0:
+        positive += 1
+    else:
+        negative += 1
+    number = int(input('Enter: '))
+positive_percentage = (positive/(positive + negative)) * 100
+negative_percentage = (negative/(positive + negative)) * 100
+print("Positive:%d%%" % positive_percentage, "Negative: %d%%" % negative_percentage)
+    
+    
