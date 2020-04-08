@@ -1,0 +1,47 @@
+lst = []
+
+for i in range(33,123):
+    lst.append(chr(i))
+for i in lst:
+    print('%s, ' %(i),end="")
+
+characters = []
+digits =[]
+lettersU = []
+lettersL = []
+
+for i in lst:
+    if i in lst[15:25]:
+        digits.append(i)
+    elif i in lst[32:58]:
+        lettersU.append(i)
+    elif i in lst[64:91]:
+        lettersL.append(i)
+    else:
+        characters.append(i)
+print('\nDigits: %s' %(digits),'\nUppercase letters: %s' %(lettersU), '\nLowercase letters: %s' %(lettersL), '\nSpecial Characters: %s' %(characters) )
+
+a = tuple(digits)
+b = tuple(lettersU)
+c = tuple(lettersL)
+d = tuple(characters)
+print('\nDigits:', (a), '\nUppercase letters:', (b), '\nLowercase letters:', (c), '\nSpecial Characters:', (d))
+
+text = input('Enter some digit, uppercase/lowercase letter or special character: ')
+for x in text:
+    if x in a:
+        a_index = a.index(x)
+        print('The index of digit is: %s' %a_index)
+    elif x in b:
+        b_index = b.index(x)
+        print('The index of uppercase letter is: %s' %b_index)
+    elif x in c:
+        c_index = c.index(x)
+        print('The index of lowercase letter is: %s' %c_index)
+    else:
+        d_index = d.index(x)
+        print('The index of special character is: %s' %d_index)
+
+r = reversed(c)
+print("Reversed list of lowercase letters: " ,tuple(r))
+    
