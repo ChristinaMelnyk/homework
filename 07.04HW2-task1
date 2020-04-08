@@ -1,0 +1,16 @@
+vowel = ["a", "e", "i", "o", "u", "y"]
+consonantal = ["b", "c", "d", "e", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z"]
+entered_vowel = []
+entered_consonantal = []
+strings = []
+for _ in range(int(input('Enter strings count: '))):
+    strings.append(input('Enter string: '))
+for string in strings:
+    entered_vowel.append([])
+    entered_consonantal.append([])
+    for char in string:
+        if char in vowel:
+            entered_vowel[-1].append(char)
+        elif char in consonantal:
+            entered_consonantal[-1].append(char)
+print('Entered vowels: %s' %entered_vowel, '\nEntered consonantal: %s' %entered_consonantal)
