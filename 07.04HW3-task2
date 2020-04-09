@@ -1,9 +1,0 @@
-x = input('Enter digist and arithmetic: ' )
-symbols = ['/', '-', '=', '+', '*']
-a = list(set(x))
-
-for symbol in symbols:
-    if symbol in a:
-        a.remove(symbol)
-
-print('Result: %s' %sorted(a))
