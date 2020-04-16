@@ -1,3 +1,6 @@
+#У змінній записаний текст. Словом вважається послідовність непорожніх символів, які йдуть підряд, слова розділені одним або більше пробілом.
+#Програмно створіть словник, в якому ключами є слова з речення, а значеннями – кількість входження в речення.
+
 from collections import defaultdict, Counter
 text = "You should to test your tasks on your test environment"
 text_list = text.split()
