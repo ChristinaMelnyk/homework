@@ -1,0 +1,31 @@
+# Написати функцію date, яка приймає 3 аргументи - день, місяць і рік. Повернути True, якщо така дата є в нашому календарі, і False - в іншому випадку.
+
+a = [int(i) for i in input('Enter the date in format ../../....: ').split('/')]
+year = a[2]
+month = a[1]
+day = a[0]
+m31 = (1, 3, 5, 7, 8, 10, 12)
+m30 = (4, 6, 9, 11)
+
+def date(day, month, year):
+    if year%4 == 0:
+        if month == 2 and 0 < day <= 29:
+            return True
+        elif month in m31 and 0 < day <= 31:
+            return True
+        elif month in m30 and 0 < day <= 30:
+            return True 
+        else:
+            return False
+    elif year%4 != 0:
+        if month==2 and 0 < day < 28:
+            return True
+        elif month in m31 and 0 < day <= 31:
+            return True
+        elif month in m30 and 0 < day <= 30:
+            return True
+        else:
+            return False
+    else:
+        return False
+print(date(day, month, year))
