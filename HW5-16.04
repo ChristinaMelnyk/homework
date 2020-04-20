@@ -1,0 +1,9 @@
+#Користувач робить внесок в розмірі n гривень строком на years років під 10% річних (щороку розмір його внеску збільшується на 10%. Ці гроші додаються до суми вкладу, і на них в наступному році теж будуть відсотки).
+
+def bank(money,years):
+	for i in range(years):
+		money+=money*0.1
+	return money
+xmoney = int(input('Enter amoount of money for deposit: '))
+yyears = int(input('Enter how many years do you want to open a deposit: ' ))
+print('After %d years'  %yyears, 'you will recive %s money' %bank(xmoney, yyears))
