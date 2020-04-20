@@ -1,0 +1,10 @@
+#Написати функцію square, яка приймає 1 аргумент - сторону квадрата, і повертає 3 значення (за допомогою кортежу): периметр квадрата, площу квадрата і діагональ квадрата.
+
+def square(side):
+    perimeterS = 4*side
+    squareS = side*side
+    diagonalS = round((side*2**0.5),2)
+    kv = (perimeterS, squareS, diagonalS)
+    return kv
+sideS = int(input("Please enter the side of square "))
+print (" The perimetr, square and diagonal is : ", square(sideS))
