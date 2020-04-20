@@ -1,0 +1,9 @@
+#Написати функцію is_year_leap, приймає 1 аргумент - рік, і повертає True, якщо рік високосний, і False в іншому випадку.
+
+def is_year_leap(y):
+    if ((y%4 == 0 and y%100 != 0) or (y%400 == 0)):
+        return True
+    else:
+        return False
+year =int(input('Please enter year '))
+print(is_year_leap(year))
