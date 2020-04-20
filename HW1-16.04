@@ -1,0 +1,22 @@
+#Написати функцію arithmetic, яка приймає 3 аргументи: перші 2 - числа, третій - операцію, яка повинна бути здійснена над ними. Якщо третій аргумент +, додати їх; якщо -, то відняти; * - помножити; / - розділити (перше на друге). В інших випадках повернути рядок "Невідома операція".
+
+def arithmetic(a, b, c):
+    if c == "+":
+        return a + b
+        
+    elif c == "-":
+        return a - b
+        
+    elif c == "*":
+        return a * b
+        
+    elif c == "/":
+        return a / b
+        
+    else:
+        return("Not defined operarion")
+
+first = float(input("Please enter the first digit: "))
+second = float(input ("Please the second digit: "))
+operand = str(input ("Please enter symbol of operation: "))
+print('Result of operation = %d' %(arithmetic(first,second,operand)))
